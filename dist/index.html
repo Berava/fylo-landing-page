@@ -14,5 +14,55 @@
     <link rel="stylesheet" href="./css/type.css" />
     <title>Fylo</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./img/logo.svg" alt="logo of Fylo"/></a>
+        </div>
+        <nav class="header-navbar">
+          <ul class="header-nav">
+            <li><a href="#" class="fancy-link">Features</a></li>
+            <li><a href="#" class="fancy-link">Team</a></li>
+            <li><a href="#" class="fancy-link">Sign In</a></li>
+          </ul>
+        </nav>
+        <!-- Showcase -->
+      </div>
+    </header>
+    <section class="showcase-section">
+      <div class="container">
+        <div class="ilustration">
+          <img src="./img/illustration-1.svg" alt="" />
+        </div>
+        <div class="text">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your mots important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form class="showcase-form-email" action="#" novalidate>
+            <input
+              class="input-design"
+              type="email"
+              name="showcase-input"
+              id="showcase-input"
+              placeholder="Enter your email..."
+              aria-required="true"
+            />
+            <span
+              id="showcase-input-error"
+              class="error-msg small-text"
+              aria-live="polite"
+              data-msg="Please provide a valid email address"
+            ></span>
+            <button class="btn" type="submit">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="productivity-section"></section>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

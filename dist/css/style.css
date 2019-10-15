@@ -1,3 +1,4 @@
+/* Mobile First */
 :root {
   /* primary */
   --clr-primary-dark: hsl(243, 87%, 12%);
@@ -19,11 +20,24 @@
 }
 
 body {
+  color: var(--clr-primary-dark);
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  /* A ENLEVER */
+  max-width: 375px;
+  margin: 0 auto;
+  /* A ENLEVER */
+}
+
+section {
+  margin-top: 6rem;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 img {
@@ -31,13 +45,117 @@ img {
   display: block;
 }
 
+h1,
+h2,
+h3,
+button,
+ul {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
 button,
 input {
   font-family: inherit;
 }
 
-h1,
-button,
-ul {
-  font-family: 'Raleway', sans-serif;
+::placeholder {
+  color: var(--clr-neutral-gray);
+}
+
+.container {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  margin-top: 2rem;
+}
+.header-nav {
+  list-style: none;
+}
+
+.header-nav > li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.header-nav a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+}
+
+/* showcase section*/
+.showcase-section h1,
+.showcase-section p,
+.showcase-section .showcase-form-email {
+  margin-top: 2.5rem;
+}
+
+.showcase-form-email .btn {
+  margin-top: 1rem;
+}
+
+/* Utility class */
+.fancy-link {
+  position: relative;
+}
+
+.productivity-section img {
+  padding-top: 5rem;
+}
+
+.fancy-link::after {
+  border-bottom: 1px solid var(--clr-primary);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform;
+  transition-duration: 200ms;
+  transform-origin: right;
+  transition-timing-function: ease-in;
+  width: 100%;
+}
+
+.fancy-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.input-design {
+  all: unset;
+  border: 1px solid var(--clr-primary-dark);
+  border-radius: 3px;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  all: unset;
+  background-color: var(--clr-accent-bright);
+  border-radius: 3px;
+  box-shadow: -1px 12px 13px -10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  text-align: center;
+  -webkit-text-fill-color: #fff;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.error-msg {
+  color: hsl(354, 100%, 66%);
+}
+
+.invalid {
+  border: 1px solid hsl(354, 100%, 66%);
 }

@@ -1,0 +1,24 @@
+/* Header */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .logo {
+  flex-basis: 25%;
+}
+
+.container .header-navbar {
+  justify-self: flex-end;
+}
+
+.header-navbar .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* showcase */
+.showcase-form-email {
+  display: flex;
+  flex-direction: column;
+}
