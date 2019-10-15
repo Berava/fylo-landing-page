@@ -1,0 +1,43 @@
+:root {
+  /* primary */
+  --clr-primary-dark: hsl(243, 87%, 12%);
+  --clr-primary: hsl(238, 22%, 44%);
+  /* accent */
+  --clr-accent-bright: hsl(224, 93%, 58%);
+  --clr-accent-moderate: hsl(170, 45%, 43%);
+  /* neutral */
+  --clr-neutral-blue: hsl(240, 75%, 98%);
+  --clr-neutral-gray: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+h1,
+button,
+ul {
+  font-family: 'Raleway', sans-serif;
+}
