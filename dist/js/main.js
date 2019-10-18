@@ -14,7 +14,7 @@ function removeError() {
 
 form[0].addEventListener('submit', e => {
   e.preventDefault();
-  if (!showcaseInput.validity.valid) {
+  if (!showcaseInput.validity.valid || showcaseInput.value === '') {
     styleError();
   } else {
     removeError();

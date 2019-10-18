@@ -17,8 +17,15 @@
   align-items: center;
 }
 
-/* showcase */
+/* showcase section */
 .showcase-form-email {
   display: flex;
   flex-direction: column;
+}
+
+/* Card */
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

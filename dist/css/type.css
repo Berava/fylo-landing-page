@@ -5,6 +5,8 @@
   --h2: calc(var(--h3) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));
   --small-text: calc(var(--base-size) / var(--type-scale));
+  --very-small-text: calc(var(--small-text) / var(--type-scale));
+  --extra-small-text: calc(var(--very-small-text) / var(--type-scale));
 }
 
 h1 {
@@ -25,4 +27,12 @@ p {
 
 .small-text {
   font-size: var(--small-text);
+}
+
+.very-small-text {
+  font-size: var(--very-small-text);
+}
+
+.extra-small-text {
+  font-size: var(--extra-small-text);
 }
