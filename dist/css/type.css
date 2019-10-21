@@ -36,3 +36,9 @@ p {
 .extra-small-text {
   font-size: var(--extra-small-text);
 }
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --type-scale: 1.25;
+  }
+}

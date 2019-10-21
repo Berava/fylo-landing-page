@@ -23,9 +23,99 @@
   flex-direction: column;
 }
 
+/* productivity-section */
+.green-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-link a {
+  display: flex;
+  align-items: center;
+}
+
 /* Card */
 .profile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+/* early-access section */
+.access-form-email {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+
+.phone,
+.mail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list {
+  display: flex;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  .illustration {
+    grid-column: 2 / -1;
+    align-self: center;
+  }
+
+  .showcase-form-email {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 60% 30%;
+    grid-auto-flow: row;
+    align-items: flex-end;
+  }
+
+  .input-design {
+    grid-column: 1 / 2;
+  }
+
+  .btn {
+    grid-column: 2 / -1;
+  }
+
+  .error-msg {
+    grid-row: 2 / 3;
+  }
+
+  .green-link {
+    justify-content: flex-start;
+  }
+
+  .access-form-email {
+    display: grid;
+  }
+
+  .footer .container {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+  }
 }
